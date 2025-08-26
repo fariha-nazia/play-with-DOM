@@ -1,3 +1,8 @@
 #hidden-text-C4{
     display: none;
 }
+
+.btn-color-class{
+    background-color: red;
+    border: 6px solid black;
+}

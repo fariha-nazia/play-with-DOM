@@ -58,3 +58,35 @@ container5Btn.setAttribute("disabled", true);
 console.log(container5Btn);
 
 
+/**
+ * Container 6:
+ * Creating an element and append
+ * Add class name  || classList[add(),remove()]
+ * append Child vs append
+ * remove() or remove Child()
+*/
+
+// catch container 6
+const container6 = document.querySelector(".container-6");
+console.log(container6);
+
+// create a p tag and dynamically add it using JS
+const p = document.createElement("p");
+p.innerText = "I was created using JS in Node VS Element file"
+container6.appendChild(p);
+console.log(p);
+
+const h1 = document.createElement("h1");
+h1.textContent = "This is H1 - I was made dynamically using JS";
+container6.appendChild(h1);
+console.log(h1);
+
+// adding a class which I have made in css in html
+h1.className = "btn-color-class";
+
+// h1.classList.remove("btn-color-class")
+// container6.removeChild(p);
+// container6.remove();
+p.remove()
+
+
